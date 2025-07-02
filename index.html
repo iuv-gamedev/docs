@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>IUV Games - Fun & Learning for Kids</title>
+  <title>IUV GameDev - Fun & Learning for Kids</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -32,12 +32,29 @@
       margin-bottom: 30px;
       padding: 20px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+    .game-icon {
+      flex-shrink: 0;
+    }
+    .game-icon img {
+      width: 80px;
+      height: 80px;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+    .game-content {
+      flex: 1;
     }
     .game h2 {
       margin-top: 0;
+      margin-bottom: 10px;
     }
     .game ul {
       padding-left: 20px;
+      margin-top: 0;
     }
     .btn {
       display: inline-block;
@@ -59,48 +76,63 @@
 <body>
 
   <header>
-    <h1>IUV Indie Games 🎮</h1>
+    <h1>IUV GameDev 🎮</h1>
     <p>Fun & Educational Games for Kids and Word Game Lovers</p>
   </header>
 
   <div class="container">
 
     <div class="game">
-      <h2>Say ABCD with Singa 🐯</h2>
-      <p>Welcome to Say ABCD with Singa — a joyful alphabet adventure for toddlers and preschoolers! 🎉</p>
-      <ul>
-        <li>🔤 Learn the English alphabets</li>
-        <li>👂 Improve listening and speech</li>
-        <li>🎨 Enjoy bright visuals and fun animations</li>
-        <li>👆 Practice motor skills with easy tap interactions</li>
-      </ul>
-      <p><strong>Features:</strong> ✨ One-tap gameplay, 🎶 Catchy ABCD song, 🐾 Singa the lion, 📱 Offline-friendly</p>
-      <a class="btn" href="https://play.google.com/store/apps/details?id=com.iuv.abcdwithsinga" target="_blank">Download on Google Play</a>
+      <div class="game-icon">
+        <img src="https://raw.githubusercontent.com/iuv-gamedev/docs/refs/heads/main/assets/icons/Say%20ABCD%20with%20Singa.webp" alt="Say ABCD with Singa Icon">
+      </div>
+      <div class="game-content">
+        <h2>Say ABCD with Singa 🐯</h2>
+        <p>A joyful alphabet adventure for toddlers and preschoolers! 🎉</p>
+        <ul>
+          <li>🔤 Learn the English alphabets</li>
+          <li>👂 Improve listening and speech</li>
+          <li>🎨 Bright visuals and fun animations</li>
+          <li>👆 Easy tap interactions</li>
+        </ul>
+        <p><strong>Features:</strong> ✨ One-tap gameplay, 🎶 ABCD song, 🐾 Singa the lion, 📱 Offline-friendly</p>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.iuv.abcdwithsinga" target="_blank">Download on Google Play</a>
+      </div>
     </div>
 
     <div class="game">
-      <h2>Magic Colors with Singa 🌈</h2>
-      <p>Welcome to Magic Colors with Singa — a fun and educational color game for toddlers!</p>
-      <ul>
-        <li>🎨 Tap on colors to hear their names</li>
-        <li>🖌️ Paint fun shapes using magical colors</li>
-        <li>🔊 Hear color names again after painting</li>
-        <li>🌟 Vibrant visuals and cheerful voiceovers</li>
-      </ul>
-      <p><strong>Features:</strong> ✨ Easy tap-to-learn, 🎨 Fun painting, 🐯 Singa the lion, 📱 Offline play</p>
-      <a class="btn" href="https://play.google.com/store/apps/details?id=com.iuv.magiccolorswithsinga" target="_blank">Download on Google Play</a>
+      <div class="game-icon">
+        <img src="https://raw.githubusercontent.com/iuv-gamedev/docs/refs/heads/main/assets/icons/Magic%20Colors%20with%20Singa.webp" alt="Magic Colors with Singa Icon">
+      </div>
+      <div class="game-content">
+        <h2>Magic Colors with Singa 🌈</h2>
+        <p>Explore the magical world of colors with Singa!</p>
+        <ul>
+          <li>🎨 Tap on colors to hear their names</li>
+          <li>🖌️ Paint fun shapes with magical colors</li>
+          <li>🔊 Cheerful voiceovers</li>
+          <li>🌟 Boost memory and fine motor skills</li>
+        </ul>
+        <p><strong>Features:</strong> ✨ Tap-to-learn, 🎨 Shape painting, 🐯 Singa the lion, 📱 Works offline</p>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.iuv.magiccolorswithsinga" target="_blank">Download on Google Play</a>
+      </div>
     </div>
 
     <div class="game">
-      <h2>Treasure D Word 🧩🔍</h2>
-      <p>Sharpen your riddle-solving skills and embark on a fun word challenge!</p>
-      <ul>
-        <li>🔠 Wordle-like gameplay with a twist</li>
-        <li>🏅 Engaging puzzles for all levels</li>
-        <li>📚 Improve vocabulary and logic</li>
-      </ul>
-      <p>Each puzzle is like a mini treasure hunt — are you ready to find the words?</p>
-      <a class="btn" href="https://play.google.com/store/apps/details?id=com.iuv.treasuredword" target="_blank">Download on Google Play</a>
+      <div class="game-icon">
+        <img src="https://raw.githubusercontent.com/iuv-gamedev/docs/refs/heads/main/assets/icons/Treasure%20D%20Word.webp" alt="Treasure D Word Icon">
+      </div>
+      <div class="game-content">
+        <h2>Treasure D Word 🧩🔍</h2>
+        <p>Solve clever riddles and guess hidden words! 🧠💡</p>
+        <ul>
+          <li>🔠 Wordle-like with a twist</li>
+          <li>🏅 Fun puzzles for all ages</li>
+          <li>📚 Boost vocabulary & logic</li>
+        </ul>
+        <p>Each puzzle is a mini treasure hunt. Ready to find the answers?</p>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.iuv.treasuredword" target="_blank">Download on Google Play</a>
+      </div>
     </div>
 
   </div>
